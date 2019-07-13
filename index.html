@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- favicon設定 -->
+  <link rel="shortcut icon" href="./img/favicon.ico">
+  <!-- Font Awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.8.2/js/all.js" integrity="sha384-DJ25uNYET2XCl5ZF++U8eNxPWqcKohUUBUpKGlNLMchM7q4Wjg2CUpjHLaL8yYPH" crossorigin="anonymous"></script>
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+
+  <title>Tarzan Go</title>
+</head>
+<body>
+  <div class="rule text-center text-white">
+    <h1>Tarzan Go</h1>
+    <h3>~ルール説明~</h3>
+    <p>ターザンをアップ、ダウンボタンで操り、木の間を通って進もう！<br>
+      画面枠や木にぶつかるとゲームオーバー。スコアが伸びるに連れてスピードがアップします。<br>
+      制作者のスコアは45です。ハイスコアを目指そう！！</p>
+  </div>
+  <div id="container">
+    <div id="tarzan"></div>
+    <div id="wood_1" class="wood"></div>
+    <div id="wood_2" class="wood"></div>
+  </div>
+
+  <div class="res-btn text-center mt-3">
+    <a id="restart" class="btn btn-lg btn-danger text-white">もう一度遊ぶ</a>
+    <a id="quit" class="btn btn-lg btn-primary"  href="https://twitter.com/intent/tweet?text=「Tarzan Go」を遊びました！スコアは「」点でした！！ @toki_work26 &url=http://toki-life.com/Tarzan-Go/" target="_blank" rel="nofollow"><span><i class="fab fa-twitter"></i></span>シェアする</a>
+  </div>
+  <div id="score_div">
+    <p class="score text-white">Score: <span id="score">0</span></p>
+  </div>
+  <div class="up-btn text-center">
+    <a id="upper" class="btn btn-lg btn-info text-white mb-5">アップ</a>
+    <a id="down" class="btn btn-lg btn-info text-white mb-5">ダウン</a>
+  </div>
+
+</body>
+</html>
